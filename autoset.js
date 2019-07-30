@@ -1,11 +1,18 @@
 let mio = {
-        _a: 1,
-        get a(){
-            return this._a
+        get first(){
+            return this._first
         },
-        set a(val){
-            this._a=val
+        set first(val){
+            this._first = val
+        },
+        get second(){
+            return (this._first + 1)||1
+        },
+        set second(val){
+            this._second = val
         }
 }
 
-console.log(mio)
+mio.first = 2
+console.log(mio.first)      //2
+console.log(mio.second)     //3
