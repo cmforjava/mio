@@ -1,0 +1,10 @@
+{
+  "name": "mio",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node red-blackTree.ts"
+  },
+  "dependencies": {
+    
+  }
+}
