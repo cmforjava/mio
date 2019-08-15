@@ -79,14 +79,10 @@ arr.map((res:number)=>{
 
     }
     while(current.value&&!(res<current.value&&!current.lchild.value)||(res>current.value&&!current.rchild.value)){
-
         if(res>current.value){
-
             console.log(current.value,'value', current.lchild.value,'lv', current.rchild.value,'rv')
             current = current.rchild
-
         }else{
-
             console.log(current.value,'value2', current.lchild.value,'lv2', current.rchild.value,'rv2')
             current = current.lchild
         }
