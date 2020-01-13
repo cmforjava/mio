@@ -1,0 +1,65 @@
+<template>
+  <input :checked="wz" type="checkbox" class="switch" @change="change" />
+</template>
+
+<script>
+export default {
+  name: "m-switch",
+  data() {
+    return {};
+  },
+  props: {
+    wz: {
+      type: Boolean,
+      default: true
+    }
+  },
+  methods: {
+    change(val) {
+      this.$emit("update:wz", val.target.checked);
+    }
+  }
+};
+</script>
+
+<style>
+/* Switch开关样式 */
+/* 必须是input为 checkbox class 添加 switch 才能实现以下效果 */
+input[type="checkbox"].switch {
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="checkbox"].switch::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0, 0, 2px, #999;
+  transition: 0.4s;
+  top: 2px;
+  position: absolute;
+  left: 2px;
+}
+
+input[type="checkbox"].switch:checked {
+  background: #ff444b;
+}
+/* 当input[type=checkbox]被选中时：伪元素显示下面样式 位置发生变化 */
+input[type="checkbox"].switch:checked::after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  top: 2px;
+}
+</style>
