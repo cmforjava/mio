@@ -1,0 +1,14 @@
+{
+  "name": "mioc",
+  "version": "1.0.0",
+  "description": "My input and output.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "mioc"
+  ],
+  "author": "mioc",
+  "license": "ISC"
+}
