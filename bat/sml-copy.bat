@@ -1,0 +1,1 @@
+rd /s/q "C:\svnprojects\znt.ywlvjia.com\public\ssy\xcx\common\"&&xcopy /e/c/h/z "C:\git\sml\unpackage\dist\build\mp-weixin\mio" "C:\svnprojects\znt.ywlvjia.com\public\ssy\xcx\" /Y &&pause
